@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  background: hsl(0, 0%, 94%);
+}
+main {
+  border-radius: 0.45em 0.45em 3em 0.45em;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  position: relative;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+label span {
+  color: hsl(0, 1%, 44%);
+  font-size: 0.25em;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+label input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 4px;
+  padding: 0.6em;
+  font-size: 0.4em;
+  font-weight: 800;
+  cursor: pointer;
+  caret-color:hsl(259, 100%, 65%);
+}
+.alert {
+  font-size: 0.25em;
+  font-weight: 800;
+  color: hsl(0, 100%, 67%);
+  padding-top: 5px;
+  font-style: italic;
+}
+label input:hover {
+  border-color:hsl(259, 100%, 65%);
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 1em;
+  border-radius: 50%;
+  background: hsl(259, 100%, 65%);
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+#btn:hover {
+  background: black;
+}
+#btn img {
+  width: 100%;
+}
+section {
+  font-style: italic;
+  font-weight: 800;
+}
+.data {
+  color:hsl(259, 100%, 65%);
+  margin-right: 5px;
+}
+section span {
+  color: hsl(0, 0%, 8%);
+}
+
+@media screen and (min-width:750px) {
+main {
+  min-width: 600px;
+  width: 65vw;
+  max-width: 600px;
+  padding: 0.8em;
+}
+form {
+  padding-bottom: 0.6em;
+  justify-content: flex-start;
+}
+label {
+  width: 23%;
+  padding-right: 0.5em;
+}
+#btn {
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
+section {
+  padding-top: 0.5em;
+}
+section span {
+  font-size: 1.5em;
+}
+}
+
+@media screen and (max-width:749px) {
+main {
+  width: 95%;
+  padding: 1.1em 0.8em;
+}
+form {
+  justify-content: space-between;
+  padding-bottom: 1.5em;
+}
+label {
+  width: 30%;
+}
+#btn {
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+}
+section {
+  padding-top: 1em;
+}
+section span {
+  font-size: 1.3em;
+}
+}
